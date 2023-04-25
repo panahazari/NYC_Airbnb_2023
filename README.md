@@ -53,9 +53,12 @@ List of the important features which we will use in this project.
 
 The first step is to know the dataset itself and it's general status. 
 
-'''
+```ruby
 df.shape
-'''
+
+```ruby
+
+
 
 
 
