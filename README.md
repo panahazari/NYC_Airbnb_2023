@@ -53,7 +53,9 @@ List of the important features which we will use in this project.
 
 The first step is to know the dataset itself and it's general status. 
 
-**Word Cloud (Neighbourhood) :**  
-<img src="https://github.com/panahazari/NYC_Airbnb_2023/blob/main/images/New_York_City_.png" width="200" height="200">
+'''
+df.shape
+'''
+
 
 
