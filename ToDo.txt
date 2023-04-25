@@ -1,0 +1,16 @@
+- Data Preperation:
+ --> Feature Engineering:
+		* Handling Strings in Dataset
+		* Cyclic Values
+		* NaNs
+		* Outliers
+		* Binning 
+		* Cross Features
+		
+
+- Data Eploration:
+- Data Analysis:
+- Data Classification:
+- Principle Components Analysis
+
+
