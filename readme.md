@@ -17,7 +17,7 @@ The dataset is publicly available and has been used by researchers to analyze va
 
 **Python Version** : 3.11
 
-**Packages**: Numpy, Pandas, Keras, Matplotlib, Scikit, Seaborn
+**Packages**: Numpy, Pandas, Keras, Matplotlib, Scikit, Seaborn, WordCould, tabulate
 
 **IDE** : Visual Studio Code, Jupyter Notebook
 
@@ -405,7 +405,7 @@ print('{:.4f}%'.format((len(df[df['price'] > 2000]) / df.shape[0]) * 100));
 
 
     
-![png](readMe_files/readMe_35_0.png)
+![png](readme_files/readme_35_0.png)
     
 
 
@@ -451,7 +451,7 @@ plt.show();
 
 
     
-![png](readMe_files/readMe_41_0.png)
+![png](readme_files/readme_41_0.png)
     
 
 
@@ -485,7 +485,7 @@ df.hist(column='minimum_nights', bins=50);
 
 
     
-![png](readMe_files/readMe_47_0.png)
+![png](readme_files/readme_47_0.png)
     
 
 
@@ -578,7 +578,7 @@ plt.show();
 
 
     
-![png](readMe_files/readMe_60_0.png)
+![png](readme_files/readme_60_0.png)
     
 
 
@@ -591,7 +591,7 @@ df.hist(column='maximum_nights', bins=50);
 
 
     
-![png](readMe_files/readMe_62_0.png)
+![png](readme_files/readme_62_0.png)
     
 
 
@@ -719,7 +719,7 @@ plt.show();
 
 
     
-![png](readMe_files/readMe_79_0.png)
+![png](readme_files/readme_79_0.png)
     
 
 
@@ -771,7 +771,7 @@ df['host_response_rate'].value_counts()
 
 
     
-![png](readMe_files/readMe_83_1.png)
+![png](readme_files/readme_83_1.png)
     
 
 
@@ -833,7 +833,7 @@ df['host_acceptance_rate'].value_counts()
 
 
     
-![png](readMe_files/readMe_89_1.png)
+![png](readme_files/readme_89_1.png)
     
 
 
@@ -899,7 +899,7 @@ df['bedrooms'].value_counts()
 
 
     
-![png](readMe_files/readMe_95_1.png)
+![png](readme_files/readme_95_1.png)
     
 
 
@@ -970,7 +970,7 @@ df['beds'].value_counts()
 
 
     
-![png](readMe_files/readMe_103_1.png)
+![png](readme_files/readme_103_1.png)
     
 
 
@@ -1022,7 +1022,7 @@ plt.show();
 
 
     
-![png](readMe_files/readMe_110_0.png)
+![png](readme_files/readme_110_0.png)
     
 
 
@@ -1041,7 +1041,7 @@ plt.show();
 
 
     
-![png](readMe_files/readMe_113_0.png)
+![png](readme_files/readme_113_0.png)
     
 
 
@@ -1066,7 +1066,7 @@ plt.show();
 
 
     
-![png](readMe_files/readMe_116_0.png)
+![png](readme_files/readme_116_0.png)
     
 
 
@@ -1130,7 +1130,7 @@ plt.show();
 
 
     
-![png](readMe_files/readMe_125_0.png)
+![png](readme_files/readme_125_0.png)
     
 
 
@@ -1155,7 +1155,7 @@ plt.show();
 
 
     
-![png](readMe_files/readMe_127_0.png)
+![png](readme_files/readme_127_0.png)
     
 
 
@@ -1182,7 +1182,7 @@ plt.show();
 
 
     
-![png](readMe_files/readMe_129_0.png)
+![png](readme_files/readme_129_0.png)
     
 
 
@@ -1230,7 +1230,7 @@ plt.show();
 
 
     
-![png](readMe_files/readMe_133_0.png)
+![png](readme_files/readme_133_0.png)
     
 
 
@@ -1403,7 +1403,7 @@ plt.show();
 
 
     
-![png](readMe_files/readMe_148_0.png)
+![png](readme_files/readme_148_0.png)
     
 
 
@@ -1420,7 +1420,7 @@ plt.show();
 
 
     
-![png](readMe_files/readMe_150_0.png)
+![png](readme_files/readme_150_0.png)
     
 
 
@@ -1441,7 +1441,7 @@ plt.title("Mean price per neighborhood and neighborhood group");
 
 
     
-![png](readMe_files/readMe_152_1.png)
+![png](readme_files/readme_152_1.png)
     
 
 
@@ -1469,7 +1469,7 @@ plt.show();
 
 
     
-![png](readMe_files/readMe_154_0.png)
+![png](readme_files/readme_154_0.png)
     
 
 
@@ -1935,7 +1935,7 @@ plt.show();
 
 
     
-![png](readMe_files/readMe_170_0.png)
+![png](readme_files/readme_170_0.png)
     
 
 
@@ -1972,7 +1972,7 @@ plt.show();
 
 
     
-![png](readMe_files/readMe_172_0.png)
+![png](readme_files/readme_172_0.png)
     
 
 
@@ -2366,7 +2366,7 @@ plt.legend()
 
 
     
-![png](readMe_files/readMe_189_14.png)
+![png](readme_files/readme_189_14.png)
     
 
 
