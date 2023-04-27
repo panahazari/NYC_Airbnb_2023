@@ -54,11 +54,6 @@ The first step is to know the dataset itself and it's general status.
 
 
 ```python
-
-```
-
-
-```python
 import pandas as pd
 import warnings
 warnings.filterwarnings('ignore')
@@ -328,7 +323,7 @@ Let's see what are the unique amenities which we found:
 print(unique_amenities)
 ```
 
-    {'Long term stays allowed', 'Vineyard view', 'Concierge', 'Onsite restaurant \\u2014 Trademark Taste', 'Book', 'Bed sheets and pillows', 'Onsite restaurant \\u2014 The Press Lounge', 'Outlet covers', 'Housekeeping', 'Ping pong table', 'Onsite restaurant \\u2014 CanteenM-open 24/7', 'Kitchenette', 'Single level home', 'Wifi', 'Refrigerator', 'Exercise equipment', 'Baby monitor', 'Bathtub', 'Marina view', 'Kayak', 'Outdoor dining area', 'Essentials', 'Shared outdoor kitchen', 'Fire extinguisher', 'Waterfront', 'Central air conditioning', 'Mini fridge', 'Smoke alarm', 'Clothing', 'River view', 'Children\\u2019s dinnerware', 'Complimentary breakfast', 'TV', 'Microwave', 'changing table', 'Private outdoor kitchen', 'Radiant heating', 'Slippers', 'Bikes', 'C.O. Bigelow Apothecary toiletries', 'Private sauna', 'Mountain view', 'Onsite rooftop bar \\u2014 Mykonos Bleu Restaurant & Rooftop', 'Park view', 'Onsite restaurant \\u2014 Mykonos Bleu Restaurant & Rooftop', 'Game', 'Shared sauna', 'Sound system', 'Hot-Tube', 'Resort access', 'City skyline view', 'Shampoo', 'Private patio or balcony', 'First aid kit', 'Toiletries', 'Lock on bedroom door', 'Host greets you', 'Free resort access', 'Onsite bar \\u2014 Cafe', 'Portable heater', 'AC - split type ductless system', 'Bottled water', 'Onsite restaurant \\u2014 Blue Ribbon Sushi Izakaya', 'Le Labo toiletries', 'Baking sheet', 'Onsite rooftop bar \\u2014 Make Believe', 'Soap', 'Table corner guards', 'Blender', 'Beach essentials', 'Outdoor kitchen', 'Building staff', 'Boat slip', 'Luggage dropoff allowed', 'Complimentary continental breakfast', 'Nespresso machine', 'C.O. Bigelow toiletries', 'Bluetooth speaker', 'Ski-in/Ski-out', 'Sferra linens', 'Stove', 'Fireplace', 'Iron', 'Turndown service', 'Onsite bar \\u2014 Molyvos Restaurant - Bar', 'Ocean view', 'Heating - split type ductless system', 'Courtyard view', 'Garden view', 'Safe', 'High chair', 'Shower gel', 'Fitness center', 'Malin+Goetz toiletries', 'Portable air conditioning', 'Garnier-Thiebaut linens', 'Pets allowed', 'Beach access', 'Parking', 'Backyard', 'Trash compactor', 'Sea view', 'Cooked-to-order breakfast available for a fee', 'Piano', 'pool', 'Lake access', 'Continental breakfast available \\u2014 $13 per person per day', 'Keypad', 'Outdoor furniture', 'Breakfast', 'Elevator', 'Bathrobes', 'Window guards', 'Spa', 'Restaurant', 'Baby safety gates', 'Onsite bar', 'Frette linens', 'Acca Kappa toiletries', '24-hour fitness center', 'Carport', 'Onsite rooftop bar \\u2014 cloudM', 'Portable fans', 'Toaster', 'Bay view', 'Mosquito net', 'Cleaning products', 'Smart lock', 'Onsite restaurant \\u2014 Crown Shy', 'Window AC unit', 'Coffee', 'Carbon monoxide alarm', 'Record player', 'Laundry services', 'Valley view', 'Wine glasses', 'Gym', 'Harbor view', 'Desert view', 'Sun loungers', 'Hot water', 'EV Cahrger', 'Room service', 'Breakfast buffet available \\u2014 $15 per person per day', 'Conditioner', 'Limited housekeeping \\u2014 weekly', 'Freezer', 'Onsite restaurant \\u2014 Garden', 'Golf course view', 'Hangers', 'Garage', 'Cooked-to-order breakfast available \\u2014 $15 per person per day', 'Cooking basics', 'Lockbox', 'Steam room', 'Fire pit', 'Onsite bar \\u2014 Osteria Lumaca', 'Dining table', 'Oven', 'Limited housekeeping \\u2014 on request', 'MOR toiletries', 'Barbecue utensils', 'Lake view', 'Bread maker', 'Laundromat nearby', 'Baby bath', 'Bed linens', 'Shared patio or balcony', 'Minibar', 'Onsite rooftop bar \\u2014 Last Light', 'Sauna', 'Onsite restaurant \\u2014 Churrascaria Plataforma', 'Outdoor shower', 'Dedicated workspace', 'Ski-in/ski-out \\u2013 Near ski lifts', 'Private living room', 'Garden', 'Extra pillows and blankets', 'Paid resort access', 'Air conditioning', 'Ceiling fan', 'Resort view', 'Airport shuttle', 'Self check-in', 'Central heating', 'Hot water kettle', 'Canal view', 'Washer', 'Bidet', 'Security cameras on property', 'Dishes and silverware', 'Crib', 'Smoking allowed', 'Dryer', 'Babysitter recommendations', 'Private entrance', 'Hot breakfast available \\u2014 $20 per person per day', 'Cleaning available during stay', 'Hammock', 'Room-darkening shades', 'Ethernet connection', 'Kitchen', 'Breakfast available for a fee', 'Onsite bar \\u2014 Overstory', 'Onsite restaurant \\u2014 Blue Ribbon', 'ReVolve toiletries', 'House bikes', 'Heating', 'BBQ', 'Beach view', 'Rice maker', 'Patio or balcony'}
+    {'Onsite restaurant \\u2014 Trademark Taste', 'Garden view', 'Beach essentials', 'Toiletries', 'Book', 'Paid resort access', 'Bed sheets and pillows', 'Malin+Goetz toiletries', 'Waterfront', 'City skyline view', 'Bottled water', 'Cooking basics', 'Safe', 'Private sauna', 'Smart lock', 'Outdoor kitchen', 'Onsite rooftop bar \\u2014 cloudM', 'Hot water kettle', 'Bread maker', 'Baby bath', 'Lockbox', 'Desert view', 'Garnier-Thiebaut linens', 'Essentials', 'Baking sheet', 'Bidet', 'Coffee', 'C.O. Bigelow Apothecary toiletries', 'Dishes and silverware', 'Onsite restaurant \\u2014 Garden', 'Onsite restaurant \\u2014 CanteenM-open 24/7', 'Concierge', 'Resort access', 'Game', 'Exercise equipment', 'Table corner guards', 'Garden', 'Private patio or balcony', 'Bay view', 'Valley view', 'Luggage dropoff allowed', 'Self check-in', 'Outlet covers', 'Limited housekeeping \\u2014 weekly', 'Security cameras on property', 'Onsite bar', 'Outdoor dining area', 'Onsite bar \\u2014 Overstory', 'Kitchenette', 'First aid kit', 'Outdoor furniture', 'Beach access', 'Laundry services', 'Children\\u2019s dinnerware', 'Rice maker', 'Ethernet connection', 'House bikes', 'MOR toiletries', 'Trash compactor', 'Lake view', 'Turndown service', 'Breakfast', 'Shared outdoor kitchen', 'Hot breakfast available \\u2014 $20 per person per day', 'Building staff', 'Courtyard view', 'Lock on bedroom door', 'EV Cahrger', 'Sferra linens', 'Shampoo', 'Refrigerator', 'Le Labo toiletries', 'Acca Kappa toiletries', 'changing table', 'Mini fridge', 'Outdoor shower', 'Portable air conditioning', 'Onsite restaurant \\u2014 Churrascaria Plataforma', 'Complimentary continental breakfast', 'Dedicated workspace', 'Onsite bar \\u2014 Molyvos Restaurant - Bar', 'Wifi', 'Window AC unit', 'Backyard', 'Extra pillows and blankets', 'Lake access', 'Elevator', 'Room service', 'Wine glasses', 'Onsite restaurant \\u2014 Blue Ribbon', 'Air conditioning', 'Beach view', 'Shower gel', 'Radiant heating', 'Sea view', 'Garage', 'Laundromat nearby', 'Onsite bar \\u2014 Osteria Lumaca', 'Mountain view', 'C.O. Bigelow toiletries', 'Kayak', 'ReVolve toiletries', 'Breakfast buffet available \\u2014 $15 per person per day', 'Breakfast available for a fee', 'Baby monitor', '24-hour fitness center', 'Harbor view', 'Ski-in/ski-out \\u2013 Near ski lifts', 'Private entrance', 'Spa', 'Portable fans', 'Continental breakfast available \\u2014 $13 per person per day', 'pool', 'Private outdoor kitchen', 'Bikes', 'Onsite restaurant \\u2014 Blue Ribbon Sushi Izakaya', 'Crib', 'Host greets you', 'Onsite restaurant \\u2014 Mykonos Bleu Restaurant & Rooftop', 'Room-darkening shades', 'Dining table', 'Microwave', 'Barbecue utensils', 'Steam room', 'Limited housekeeping \\u2014 on request', 'Housekeeping', 'Onsite restaurant \\u2014 Crown Shy', 'Iron', 'Cleaning products', 'Fire extinguisher', 'Central heating', 'Smoking allowed', 'Restaurant', 'Central air conditioning', 'Heating', 'Sauna', 'Private living room', 'Fireplace', 'Gym', 'Free resort access', 'Fire pit', 'Stove', 'Onsite rooftop bar \\u2014 Make Believe', 'Toaster', 'Clothing', 'Golf course view', 'Cooked-to-order breakfast available \\u2014 $15 per person per day', 'Park view', 'Washer', 'Freezer', 'Parking', 'Piano', 'Long term stays allowed', 'Dryer', 'Minibar', 'Single level home', 'Cooked-to-order breakfast available for a fee', 'Babysitter recommendations', 'Bluetooth speaker', 'Window guards', 'Hot water', 'Canal view', 'Onsite rooftop bar \\u2014 Last Light', 'Heating - split type ductless system', 'Onsite rooftop bar \\u2014 Mykonos Bleu Restaurant & Rooftop', 'Marina view', 'Oven', 'Frette linens', 'Hot-Tube', 'Airport shuttle', 'Sun loungers', 'AC - split type ductless system', 'TV', 'Ceiling fan', 'Baby safety gates', 'Boat slip', 'Onsite restaurant \\u2014 The Press Lounge', 'Resort view', 'Ping pong table', 'Keypad', 'Bathrobes', 'Carbon monoxide alarm', 'Smoke alarm', 'High chair', 'Portable heater', 'Bed linens', 'Bathtub', 'Sound system', 'Hangers', 'Shared patio or balcony', 'Nespresso machine', 'Kitchen', 'Cleaning available during stay', 'Pets allowed', 'Ocean view', 'River view', 'Onsite bar \\u2014 Cafe', 'Carport', 'Slippers', 'Patio or balcony', 'Hammock', 'BBQ', 'Blender', 'Conditioner', 'Ski-in/Ski-out', 'Shared sauna', 'Complimentary breakfast', 'Record player', 'Soap', 'Fitness center', 'Vineyard view', 'Mosquito net'}
     
 
 We hot encode the amenities and add them to our dataframe:
@@ -341,133 +336,7 @@ for amenity in unique_amenities:
 
 # droping the original amenities column
 df.drop('amenities', axis=1, inplace=True)
-
-df.head(3)
 ```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>id</th>
-      <th>host_since</th>
-      <th>host_response_rate</th>
-      <th>host_acceptance_rate</th>
-      <th>host_is_superhost</th>
-      <th>neighbourhood_cleansed</th>
-      <th>neighbourhood_group_cleansed</th>
-      <th>latitude</th>
-      <th>longitude</th>
-      <th>room_type</th>
-      <th>...</th>
-      <th>Breakfast available for a fee</th>
-      <th>Onsite bar \u2014 Overstory</th>
-      <th>Onsite restaurant \u2014 Blue Ribbon</th>
-      <th>ReVolve toiletries</th>
-      <th>House bikes</th>
-      <th>Heating</th>
-      <th>BBQ</th>
-      <th>Beach view</th>
-      <th>Rice maker</th>
-      <th>Patio or balcony</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>801749842377802394</td>
-      <td>2023-01-10</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0.0</td>
-      <td>Canarsie</td>
-      <td>Brooklyn</td>
-      <td>40.640403</td>
-      <td>-73.888535</td>
-      <td>Private room</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>765948794133787266</td>
-      <td>2022-11-22</td>
-      <td>100.0</td>
-      <td>100.0</td>
-      <td>0.0</td>
-      <td>Canarsie</td>
-      <td>Brooklyn</td>
-      <td>40.648510</td>
-      <td>-73.894330</td>
-      <td>Private room</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>636274456676328779</td>
-      <td>2022-05-27</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0.0</td>
-      <td>Tottenville</td>
-      <td>Staten Island</td>
-      <td>40.507114</td>
-      <td>-74.251907</td>
-      <td>Entire home/apt</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
-<p>3 rows × 232 columns</p>
-</div>
-
-
 
 ## Data exploration
 
@@ -531,19 +400,12 @@ plt.show()
 # Calculating the number and the percentage of prices that are equal to  500.00
 print('Values over $2000.00: ')
 print(len(df[df['price'] > 2000]))
-print('{:.4f}%'.format((len(df[df['price'] > 2000]) / df.shape[0]) * 100))
+print('{:.4f}%'.format((len(df[df['price'] > 2000]) / df.shape[0]) * 100));
 ```
 
 
-
-
-    <AxesSubplot:>
-
-
-
-
     
-![png](readMe_files/readMe_36_1.png)
+![png](readMe_files/readMe_35_0.png)
     
 
 
@@ -584,19 +446,12 @@ maximum value seems a bit strange here we plot boxplot for the minimum_nights co
 
 ```python
 df['minimum_nights'].plot(kind='box', vert=False, figsize=(15,3))
-plt.show()
+plt.show();
 ```
 
 
-
-
-    <AxesSubplot:>
-
-
-
-
     
-![png](readMe_files/readMe_42_1.png)
+![png](readMe_files/readMe_41_0.png)
     
 
 
@@ -625,19 +480,12 @@ let's plot the histogram chart for minimum_nights to know more about the distrib
 
 
 ```python
-df.hist(column='minimum_nights', bins=50)
+df.hist(column='minimum_nights', bins=50);
 ```
 
 
-
-
-    array([[<AxesSubplot:title={'center':'minimum_nights'}>]], dtype=object)
-
-
-
-
     
-![png](readMe_files/readMe_48_1.png)
+![png](readMe_files/readMe_47_0.png)
     
 
 
@@ -725,19 +573,12 @@ poxplot for maximum_nights:
 
 ```python
 df['maximum_nights'].plot(kind='box', vert=False, figsize=(15,3))
-plt.show()
+plt.show();
 ```
 
 
-
-
-    <AxesSubplot:>
-
-
-
-
     
-![png](readMe_files/readMe_61_1.png)
+![png](readMe_files/readMe_60_0.png)
     
 
 
@@ -745,19 +586,12 @@ Let's try to show the data in a different way to know more about maximum_nights:
 
 
 ```python
-df.hist(column='maximum_nights', bins=50)
+df.hist(column='maximum_nights', bins=50);
 ```
 
 
-
-
-    array([[<AxesSubplot:title={'center':'maximum_nights'}>]], dtype=object)
-
-
-
-
     
-![png](readMe_files/readMe_63_1.png)
+![png](readMe_files/readMe_62_0.png)
     
 
 
@@ -880,40 +714,12 @@ plt.figure(figsize=(10,8))
 plt.scatter(df['longitude'],df['latitude'], s = 2) # s is a size of marker
 plt.xlabel('longitude')
 plt.ylabel('Latitude')
-plt.show()
+plt.show();
 ```
 
 
-
-
-    <Figure size 1000x800 with 0 Axes>
-
-
-
-
-
-
-    <matplotlib.collections.PathCollection at 0x1f487969108>
-
-
-
-
-
-
-    Text(0.5, 0, 'longitude')
-
-
-
-
-
-
-    Text(0, 0.5, 'Latitude')
-
-
-
-
     
-![png](readMe_files/readMe_80_4.png)
+![png](readMe_files/readMe_79_0.png)
     
 
 
@@ -941,17 +747,9 @@ the distribution for the column:
 
 
 ```python
-df.hist(column='host_response_rate', bins=50)
+df.hist(column='host_response_rate', bins=50);
 df['host_response_rate'].value_counts()
 ```
-
-
-
-
-    array([[<AxesSubplot:title={'center':'host_response_rate'}>]],
-          dtype=object)
-
-
 
 
 
@@ -973,7 +771,7 @@ df['host_response_rate'].value_counts()
 
 
     
-![png](readMe_files/readMe_84_2.png)
+![png](readMe_files/readMe_83_1.png)
     
 
 
@@ -1011,17 +809,9 @@ The distribution for the column:
 
 
 ```python
-df.hist(column='host_acceptance_rate', bins=50)
+df.hist(column='host_acceptance_rate', bins=50);
 df['host_acceptance_rate'].value_counts()
 ```
-
-
-
-
-    array([[<AxesSubplot:title={'center':'host_acceptance_rate'}>]],
-          dtype=object)
-
-
 
 
 
@@ -1043,7 +833,7 @@ df['host_acceptance_rate'].value_counts()
 
 
     
-![png](readMe_files/readMe_90_2.png)
+![png](readMe_files/readMe_89_1.png)
     
 
 
@@ -1085,16 +875,9 @@ Distribution of number of bedrooms:
 
 
 ```python
-df.hist(column='bedrooms', bins=20)
+df.hist(column='bedrooms', bins=20);
 df['bedrooms'].value_counts()
 ```
-
-
-
-
-    array([[<AxesSubplot:title={'center':'bedrooms'}>]], dtype=object)
-
-
 
 
 
@@ -1116,7 +899,7 @@ df['bedrooms'].value_counts()
 
 
     
-![png](readMe_files/readMe_96_2.png)
+![png](readMe_files/readMe_95_1.png)
     
 
 
@@ -1163,16 +946,9 @@ The distribution for the number of beds:
 
 
 ```python
-df.hist(column='beds', bins=20)
+df.hist(column='beds', bins=20);
 df['beds'].value_counts()
 ```
-
-
-
-
-    array([[<AxesSubplot:title={'center':'beds'}>]], dtype=object)
-
-
 
 
 
@@ -1194,7 +970,7 @@ df['beds'].value_counts()
 
 
     
-![png](readMe_files/readMe_104_2.png)
+![png](readMe_files/readMe_103_1.png)
     
 
 
@@ -1241,26 +1017,12 @@ corr = df[['host_response_rate', 'host_acceptance_rate', 'latitude', 'longitude'
 plt.figure(figsize=(10,10))
 sns.heatmap(corr, annot=True, cmap='coolwarm')
 
-plt.show()
+plt.show();
 ```
 
 
-
-
-    <Figure size 1000x1000 with 0 Axes>
-
-
-
-
-
-
-    <AxesSubplot:>
-
-
-
-
     
-![png](readMe_files/readMe_111_2.png)
+![png](readMe_files/readMe_110_0.png)
     
 
 
@@ -1273,20 +1035,13 @@ Here is the distribution for host_since column:
 
 ```python
 df.hist(column='host_since', bins=50, figsize=(5,5))
-plt.show()
+plt.show();
 
 ```
 
 
-
-
-    array([[<AxesSubplot:title={'center':'host_since'}>]], dtype=object)
-
-
-
-
     
-![png](readMe_files/readMe_114_1.png)
+![png](readMe_files/readMe_113_0.png)
     
 
 
@@ -1306,31 +1061,12 @@ plt.pie(counts, labels=['Not a superhost', 'Superhost'], autopct='%1.1f%%')
 
 plt.title('superhost/not superhost percentage')
 
-plt.show()
+plt.show();
 ```
 
 
-
-
-    ([<matplotlib.patches.Wedge at 0x1f522e24d48>,
-      <matplotlib.patches.Wedge at 0x1f522e48788>],
-     [Text(-0.8425154419821272, 0.7072253742772956, 'Not a superhost'),
-      Text(0.8425154088745171, -0.7072254137182892, 'Superhost')],
-     [Text(-0.45955387744479664, 0.385759295060343, '77.8%'),
-      Text(0.4595538593861002, -0.38575931657361223, '22.2%')])
-
-
-
-
-
-
-    Text(0.5, 1.0, 'superhost/not superhost percentage')
-
-
-
-
     
-![png](readMe_files/readMe_117_2.png)
+![png](readMe_files/readMe_116_0.png)
     
 
 
@@ -1345,6 +1081,8 @@ print(df['room_type'].value_counts())
 
     Entire home/apt    19799
     Private room       16512
+    Shared room          540
+    Hotel room           156
     Name: room_type, dtype: int64
     
 
@@ -1386,69 +1124,13 @@ for neighborhood_group in df['neighbourhood_group_cleansed'].unique():
 ax.legend()
 ax.set_xlabel('Longitude')
 ax.set_ylabel('Latitude')
-plt.show()
+plt.show();
 
 ```
 
 
-
-
-    <matplotlib.collections.PathCollection at 0x1f5275e1748>
-
-
-
-
-
-
-    <matplotlib.collections.PathCollection at 0x1f523b6c988>
-
-
-
-
-
-
-    <matplotlib.collections.PathCollection at 0x1f523b6c148>
-
-
-
-
-
-
-    <matplotlib.collections.PathCollection at 0x1f523b6ce48>
-
-
-
-
-
-
-    <matplotlib.collections.PathCollection at 0x1f5238c8188>
-
-
-
-
-
-
-    <matplotlib.legend.Legend at 0x1f5236c7788>
-
-
-
-
-
-
-    Text(0.5, 0, 'Longitude')
-
-
-
-
-
-
-    Text(0, 0.5, 'Latitude')
-
-
-
-
     
-![png](readMe_files/readMe_126_8.png)
+![png](readMe_files/readMe_125_0.png)
     
 
 
@@ -1467,48 +1149,13 @@ plt.xlabel('Neighborhood Group')
 plt.ylabel('Percentage')
 plt.title('Percentage of Room Types by Neighborhood Group')
 plt.legend(title='Room Type', bbox_to_anchor=(1.05, 1))
-plt.show()
+plt.show();
 
 ```
 
 
-
-
-    <AxesSubplot:xlabel='neighbourhood_group_cleansed'>
-
-
-
-
-
-
-    Text(0.5, 0, 'Neighborhood Group')
-
-
-
-
-
-
-    Text(0, 0.5, 'Percentage')
-
-
-
-
-
-
-    Text(0.5, 1.0, 'Percentage of Room Types by Neighborhood Group')
-
-
-
-
-
-
-    <matplotlib.legend.Legend at 0x1f523b90e08>
-
-
-
-
     
-![png](readMe_files/readMe_128_5.png)
+![png](readMe_files/readMe_127_0.png)
     
 
 
@@ -1530,40 +1177,12 @@ ax.set_ylabel('Percentage')
 ax.set_title('Percentage of Number of Accommodates by Neighborhood Group')
 ax.legend(title='Number of Accommodates', bbox_to_anchor=(1.05, 1))
 
-plt.show()
+plt.show();
 ```
 
 
-
-
-    Text(0.5, 0, 'Neighborhood Group')
-
-
-
-
-
-
-    Text(0, 0.5, 'Percentage')
-
-
-
-
-
-
-    Text(0.5, 1.0, 'Percentage of Number of Accommodates by Neighborhood Group')
-
-
-
-
-
-
-    <matplotlib.legend.Legend at 0x1f527504188>
-
-
-
-
     
-![png](readMe_files/readMe_130_4.png)
+![png](readMe_files/readMe_129_0.png)
     
 
 
@@ -1573,7 +1192,7 @@ First we want to know how many neighbourhoods we have in this listings and how m
 
 
 ```python
-print(df['neighbourhood_cleansed'].value_counts())
+print(df['neighbourhood_cleansed'].value_counts());
 ```
 
     Bedford-Stuyvesant    2754
@@ -1611,7 +1230,7 @@ plt.show();
 
 
     
-![png](readMe_files/readMe_134_0.png)
+![png](readMe_files/readMe_133_0.png)
     
 
 
@@ -1784,7 +1403,7 @@ plt.show();
 
 
     
-![png](readMe_files/readMe_149_0.png)
+![png](readMe_files/readMe_148_0.png)
     
 
 
@@ -1796,26 +1415,12 @@ Let's consider room_type and neighbourhood together:
 ```python
 sns.catplot(x="neighbourhood_group_cleansed", y="price", hue="room_type", kind="bar", data=df)
 plt.title("Price by Neighborhood and Room Type")
-plt.show()
+plt.show();
 ```
 
 
-
-
-    <seaborn.axisgrid.FacetGrid at 0x1f52a382d88>
-
-
-
-
-
-
-    Text(0.5, 1.0, 'Price by Neighborhood and Room Type')
-
-
-
-
     
-![png](readMe_files/readMe_151_2.png)
+![png](readMe_files/readMe_150_0.png)
     
 
 
@@ -1824,8 +1429,8 @@ Here plot median price per neighbourhood and define the groups for better vidual
 
 ```python
 plt.figure(figsize=(12, 8))
-grouped_df = df.groupby(['neighbourhood_group_cleansed', 'neighbourhood_cleansed'])['price'].median().reset_index()
-_ = sns.catplot(x="neighbourhood_cleansed", y="price", hue="neighbourhood_group_cleansed", kind="bar", data=grouped_df, height=5, aspect=5)
+grouped_df = df.groupby(['neighbourhood_group_cleansed', 'neighbourhood_cleansed'])['price'].median().reset_index();
+_ = sns.catplot(x="neighbourhood_cleansed", y="price", hue="neighbourhood_group_cleansed", kind="bar", data=grouped_df, height=5, aspect=5);
 plt.xticks(rotation=90);
 plt.title("Mean price per neighborhood and neighborhood group");
 ```
@@ -1836,7 +1441,7 @@ plt.title("Mean price per neighborhood and neighborhood group");
 
 
     
-![png](readMe_files/readMe_153_1.png)
+![png](readMe_files/readMe_152_1.png)
     
 
 
@@ -1864,7 +1469,7 @@ plt.show();
 
 
     
-![png](readMe_files/readMe_155_0.png)
+![png](readMe_files/readMe_154_0.png)
     
 
 
@@ -1923,7 +1528,7 @@ encoder = OneHotEncoder()
 transformer = ColumnTransformer(
     transformers=[("cat", encoder, cat_cols)],
     remainder="passthrough"
-)
+);
 
 encoded_cols = transformer.fit_transform(dataset)
 feature_names = transformer.get_feature_names_out()  
@@ -2160,7 +1765,7 @@ then we use mean of each neighbourhood to encode it:
 ```python
 neighbourhood_means = dataset.groupby('remainder__neighbourhood')['remainder__price'].mean()
 dataset['neighbourhood_Encoded'] = dataset['remainder__neighbourhood'].map(neighbourhood_means)
-dataset
+dataset.head(3)
 ```
 
 
@@ -2252,145 +1857,8 @@ dataset
       <td>1.0</td>
       <td>142.928058</td>
     </tr>
-    <tr>
-      <th>3</th>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>63.0</td>
-      <td>Flushing</td>
-      <td>3</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>91.497967</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>82.0</td>
-      <td>Whitestone</td>
-      <td>2</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>119.695652</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>35611</th>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>450.0</td>
-      <td>Midtown</td>
-      <td>2</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>368.618656</td>
-    </tr>
-    <tr>
-      <th>35612</th>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>350.0</td>
-      <td>Lower East Side</td>
-      <td>5</td>
-      <td>2.0</td>
-      <td>3.0</td>
-      <td>212.442017</td>
-    </tr>
-    <tr>
-      <th>35613</th>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>85.0</td>
-      <td>East Village</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>200.916926</td>
-    </tr>
-    <tr>
-      <th>35614</th>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>208.0</td>
-      <td>Hell's Kitchen</td>
-      <td>6</td>
-      <td>2.0</td>
-      <td>3.0</td>
-      <td>267.487008</td>
-    </tr>
-    <tr>
-      <th>35615</th>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>125.0</td>
-      <td>Lower East Side</td>
-      <td>3</td>
-      <td>3.0</td>
-      <td>3.0</td>
-      <td>212.442017</td>
-    </tr>
   </tbody>
 </table>
-<p>35616 rows × 14 columns</p>
 </div>
 
 
@@ -2420,7 +1888,7 @@ X_test_scaled = scaler.transform(X_test)
 
 # Fiting a linear regression model to predict yield using PC1 and PC2
 reg = LinearRegression()
-reg.fit(X_train, y_train)
+reg.fit(X_train, y_train);
 
 # Computing the R^2 score for the training set
 y_train_pred = reg.predict(X_train)
@@ -2431,15 +1899,8 @@ y_test_pred = reg.predict(X_test)
 r2_test = r2_score(y_test, y_test_pred)
 
 print(f"R^2 score for training set: {r2_train}")
-print(f"R^2 score for test set: {r2_test}")
+print(f"R^2 score for test set: {r2_test}");
 ```
-
-
-
-
-    LinearRegression()
-
-
 
     R^2 score for training set: 0.4034983624000258
     R^2 score for test set: 0.42369951603024003
@@ -2474,7 +1935,7 @@ plt.show();
 
 
     
-![png](readMe_files/readMe_171_0.png)
+![png](readMe_files/readMe_170_0.png)
     
 
 
@@ -2511,7 +1972,7 @@ plt.show();
 
 
     
-![png](readMe_files/readMe_173_0.png)
+![png](readMe_files/readMe_172_0.png)
     
 
 
@@ -2532,7 +1993,7 @@ X_test_pca = pca.transform(X_test_scaled)
 
 # Fit a linear regression model to predict yield using PC1 and PC2
 reg = LinearRegression()
-reg.fit(X_train_pca, y_train)
+reg.fit(X_train_pca, y_train);
 
 # Compute the R^2 score for the training set
 y_train_pred = reg.predict(X_train_pca)
@@ -2543,15 +2004,8 @@ y_test_pred = reg.predict(X_test_pca)
 r2_test = r2_score(y_test, y_test_pred)
 
 print(f"R^2 score for training set: {r2_train}")
-print(f"R^2 score for test set: {r2_test}")
+print(f"R^2 score for test set: {r2_test}");
 ```
-
-
-
-
-    LinearRegression()
-
-
 
     R^2 score for training set: 0.4035320755574746
     R^2 score for test set: 0.4239217350563893
@@ -2600,7 +2054,7 @@ X_test_scaled = scaler.transform(X_test)
 
 # Fit a linear regression model to predict yield using PC1 and PC2
 reg = LinearRegression()
-reg.fit(X_train, y_train)
+reg.fit(X_train, y_train);
 
 # Compute the R^2 score for the training set
 y_train_pred = reg.predict(X_train)
@@ -2614,15 +2068,8 @@ print(f"R^2 score for training set: {r2_train}")
 print(f"R^2 score for test set: {r2_test}")
 ```
 
-
-
-
-    LinearRegression()
-
-
-
-    R^2 score for training set: 0.4042202808976444
-    R^2 score for test set: 0.42093120345530555
+    R^2 score for training set: 0.4096697290997814
+    R^2 score for test set: 0.42572343199730667
     
 
 - With PCA
@@ -2637,7 +2084,7 @@ X_test_pca = pca.transform(X_test_scaled)
 
 # Fit a linear regression model to predict yield using PC1 and PC2
 reg = LinearRegression()
-reg.fit(X_train_pca, y_train)
+reg.fit(X_train_pca, y_train);
 
 # Compute the R^2 score for the training set
 y_train_pred = reg.predict(X_train_pca)
@@ -2651,15 +2098,8 @@ print(f"R^2 score for training set: {r2_train}")
 print(f"R^2 score for test set: {r2_test}")
 ```
 
-
-
-
-    LinearRegression()
-
-
-
-    R^2 score for training set: 0.2793120071574344
-    R^2 score for test set: 0.2766703711504973
+    R^2 score for training set: 0.31522493754617276
+    R^2 score for test set: 0.32357739001481056
     
 
 n_components=154 (maximum vlaue)
@@ -2672,7 +2112,7 @@ X_test_pca = pca.transform(X_test_scaled)
 
 # Fit a linear regression model to predict yield using PC1 and PC2
 reg = LinearRegression()
-reg.fit(X_train_pca, y_train)
+reg.fit(X_train_pca, y_train);
 
 # Compute the R^2 score for the training set
 y_train_pred = reg.predict(X_train_pca)
@@ -2685,13 +2125,6 @@ r2_test = r2_score(y_test, y_test_pred)
 print(f"R^2 score for training set: {r2_train}")
 print(f"R^2 score for test set: {r2_test}")
 ```
-
-
-
-
-    LinearRegression()
-
-
 
     R^2 score for training set: 0.40971089620777246
     R^2 score for test set: 0.4257116317672843
@@ -2737,7 +2170,7 @@ X_cat = dataset[cat_features]
 
 for feature in cat_features:
     encoder.fit(dataset[feature])
-    X_cat[feature] = encoder.transform(dataset[feature])
+    X_cat[feature] = encoder.transform(dataset[feature]);
 
 
 encoded_data = pd.concat([pd.DataFrame(X_cat), dataset[num_features]], axis=1)
@@ -2751,7 +2184,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 
 dt = DecisionTreeRegressor(max_depth=5, random_state=42)
-dt.fit(X_train, y_train)
+dt.fit(X_train, y_train);
 
 
 y_pred = dt.predict(X_test)
@@ -2761,34 +2194,6 @@ print("R^2 score:", r2_score(y_test, y_pred))
 print("Mean squared error:", mean_squared_error(y_test, y_pred))
 
 ```
-
-
-
-
-    LabelEncoder()
-
-
-
-
-
-
-    LabelEncoder()
-
-
-
-
-
-
-    LabelEncoder()
-
-
-
-
-
-
-    DecisionTreeRegressor(max_depth=5, random_state=42)
-
-
 
     R^2 score: 0.3987613734542126
     Mean squared error: 19772.712364813422
@@ -2801,20 +2206,13 @@ print("Mean squared error:", mean_squared_error(y_test, y_pred))
 from sklearn.ensemble import RandomForestRegressor
 
 rf = RandomForestRegressor(n_estimators=100, random_state=42)
-rf.fit(X_train, y_train)
+rf.fit(X_train, y_train);
 
 
 y_pred = rf.predict(X_test)
 r2 = r2_score(y_test, y_pred)
 print("R^2 score:", r2)
 ```
-
-
-
-
-    RandomForestRegressor(random_state=42)
-
-
 
     R^2 score: 0.46761721670529366
     
@@ -2866,7 +2264,7 @@ X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 
 
-n_pca_components = [10, 20, 50, 100, 150]
+n_pca_components = [20, 50, 100, 150]
 
 scores = []
 
@@ -2968,7 +2366,7 @@ plt.legend()
 
 
     
-![png](readMe_files/readMe_190_14.png)
+![png](readMe_files/readMe_189_14.png)
     
 
 
