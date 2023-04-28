@@ -1543,6 +1543,19 @@ dataset
 
 
 <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1759,6 +1772,19 @@ dataset.head(3)
 
 
 <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -2259,6 +2285,85 @@ plt.xlabel('Number of PCA components')
 plt.ylabel('R^2 score')
 plt.legend()
 ```
+
+
+
+
+    SVC(C=100, gamma='auto')
+
+
+
+    n_comp:  10
+    
+
+
+
+
+    SVC(C=100, gamma='auto')
+
+
+
+    n_comp:  20
+    
+
+
+
+
+    SVC(C=100, gamma='auto')
+
+
+
+    n_comp:  50
+    
+
+
+
+
+    SVC(C=100, gamma='auto')
+
+
+
+    n_comp:  100
+    
+
+
+
+
+    SVC(C=100, gamma='auto')
+
+
+
+    n_comp:  150
+    
+
+
+
+
+    [<matplotlib.lines.Line2D at 0x1f5436b1fc8>]
+
+
+
+
+
+
+    Text(0.5, 0, 'Number of PCA components')
+
+
+
+
+
+
+    Text(0, 0.5, 'R^2 score')
+
+
+
+
+
+
+    <matplotlib.legend.Legend at 0x1f541876ac8>
+
+
+
 
     
 ![png](readme_files/readme_189_14.png)
